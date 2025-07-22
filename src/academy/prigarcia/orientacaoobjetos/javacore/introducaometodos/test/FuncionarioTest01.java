@@ -5,10 +5,10 @@ import academy.prigarcia.orientacaoobjetos.javacore.introducaometodos.dominio.Fu
 public class FuncionarioTest01 {
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario();
-        funcionario.nome = "Priscila";
-        funcionario.idade = 37;
-        funcionario.salarios = new double[]{1200, 987.32, 2000};
-
+        funcionario.setNome("Priscila");
+        funcionario.setIdade(37);
+        funcionario.setSalarios(new double[]{1200, 987.32, 2000});
         funcionario.imprime();
+        System.out.println("Média " + funcionario.getMedia());
     }
 }
